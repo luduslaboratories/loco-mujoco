@@ -21,6 +21,7 @@ from .fourier_gr1t2_mjx import MjxFourierGR1T2
 from .skeletons import (SkeletonTorque, MjxSkeletonTorque, HumanoidTorque, SkeletonMuscle, MjxSkeletonMuscle,
                         HumanoidMuscle)
 from .SMPLBoxing import SMPLBoxing
+from .MJHumanoid import MJHumanoid
 
 # register environments in mushroom
 Atlas.register()
@@ -48,7 +49,7 @@ MjxSkeletonMuscle.register()
 MyoSkeleton.register()
 MjxMyoSkeleton.register()
 SMPLBoxing.register()
-
+MJHumanoid.register()
 # compatability with old names
 HumanoidTorque.register()
 HumanoidMuscle.register()
