@@ -28,3 +28,4 @@ loco_mujoco/LOCOMUJOCO_VARIABLES.yaml
 amass/*
 amass_conv/*
 smpl/*
+models/*
