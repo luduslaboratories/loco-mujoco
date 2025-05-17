@@ -26,6 +26,5 @@ loco_mujoco/LOCOMUJOCO_VARIABLES.yaml
 **/video2images.sh
 **/expert_traj.npz
 amass/*
-amass_conv/*
 smpl/*
 models/*
