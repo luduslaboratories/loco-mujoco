@@ -18,7 +18,7 @@ class SMPLBoxing(BaseRobotHumanoid):
 
     """
 
-    mjx_enabled = False
+    mjx_enabled = True
 
     def __init__(self,
                  spec: Union[str, MjSpec] = None,
@@ -55,6 +55,7 @@ class SMPLBoxing(BaseRobotHumanoid):
 
 
         super().__init__(spec=spec, actuation_spec=actuation_spec, observation_spec=observation_spec, **kwargs)
+        # super().__init__(timestep=0.002, n_substeps=5, **kwargs)
 
     def _get_spec_modifications(self) -> Tuple[List[str], List[str], List[str]]:
         """
