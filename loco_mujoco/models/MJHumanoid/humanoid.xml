@@ -5,11 +5,11 @@
     <default>
         <joint armature="1" damping="1" limited="true"/>
         <geom conaffinity="1" condim="1" contype="1" margin="0.001" material="geom" rgba="0.8 0.6 .4 1"/>
-        <motor ctrllimited="true" ctrlrange="-.4 .4"/>
+        <motor ctrllimited="true" ctrlrange="-.8 .8"/>
     </default>
-    <option integrator="RK4" iterations="50" solver="PGS" timestep="0.003">
+    <!-- <option integrator="RK4" iterations="50" solver="PGS" timestep="0.003"> -->
         <!-- <flags solverstat="enable" energy="enable"/>-->
-    </option>
+    <!-- </option> -->
     <size nkey="5" nuser_geom="1"/>
     <visual>
         <map fogend="5" fogstart="3"/>
