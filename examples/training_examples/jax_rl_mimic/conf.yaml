@@ -23,13 +23,15 @@ experiment:
   task_factory:
     name: ImitationFactory
     params:
-      lafan1_dataset_conf:
-        dataset_name:
-          - walk1_subject5
+      # lafan1_dataset_conf:
+      #   dataset_name:
+      #     - walk1_subject5
+      # amass_dataset_conf:
+      #   - CMU/CMU/13/13_17_poses
   env_params:
-    env_name: MjxUnitreeH1
+    env_name: MJHumanoid
     headless: True
-    disable_arms: false
+    # disable_arms: false
     horizon: 1000
     goal_type: GoalTrajMimic
     goal_params:
@@ -94,13 +96,13 @@ experiment:
       - left_foot_mimic
       - right_hand_mimic
       - right_foot_mimic
-    joints_to_ignore:
-      - pelvis_tx
-      - pelvis_tz
-      - pelvis_ty
-      - pelvis_tilt
-      - pelvis_list
-      - pelvis_rotation
+    # joints_to_ignore:
+    #   - pelvis_tx
+    #   - pelvis_tz
+    #   - pelvis_ty
+    #   - pelvis_tilt
+    #   - pelvis_list
+    #   - pelvis_rotation
 
 # Define control subconfigs
 control_config:

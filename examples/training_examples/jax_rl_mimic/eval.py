@@ -3,6 +3,7 @@ import argparse
 
 from loco_mujoco import TaskFactory
 from loco_mujoco.algorithms import PPOJax
+from loco_mujoco.task_factories import AMASSDatasetConf
 
 from omegaconf import OmegaConf
 
@@ -27,7 +28,10 @@ factory = TaskFactory.get_factory_cls(config.experiment.task_factory.name)
 OmegaConf.set_struct(config, False)  # Allow modifications
 config.experiment.env_params["headless"] = False
 config.experiment.env_params["goal_type"] = "GoalTrajMimicv2"   # nicer looking than GoalTrajMimic
-env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+env = factory.make(**config.experiment.env_params, 
+                   amass_dataset_conf=AMASSDatasetConf(["CMU/CMU/13/13_17_poses"]),
+                #    **config.experiment.task_factory.params
+                   )
 
 # Determine which evaluation environment to run
 if args.use_mujoco:

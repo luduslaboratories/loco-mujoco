@@ -293,7 +293,9 @@ class Mujoco:
         """
 
         if self._viewer is None:
-            self._viewer = MujocoViewer(self._model, self.dt, record=record, **self._viewer_params)
+            self._viewer = MujocoViewer(self._model, self.dt, record=record, 
+                                        # **self._viewer_params
+                                        )
 
             headless = self._viewer_params.get("headless", False)
 
