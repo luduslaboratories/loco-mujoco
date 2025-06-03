@@ -29,3 +29,5 @@ amass/*
 smpl/*
 models/*
 imgs/*
+amass_conv/*
+*.npy

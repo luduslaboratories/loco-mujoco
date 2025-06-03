@@ -10,7 +10,7 @@ def experiment(seed=0):
     env = ImitationFactory.make("MJHumanoid",
                                 # if SMPL and AMASS are installed, you can use the following:
                                 # amass_dataset_conf=AMASSDatasetConf(["DanceDB/DanceDB/20120911_TheodorosSourmelis/Capoeira_Theodoros_v2_C3D_poses"]),
-                                amass_dataset_conf=AMASSDatasetConf(["CMU/CMU/13/13_17_poses"]),
+                                amass_dataset_conf=AMASSDatasetConf(["CMU/CMU/13/venia_dancing"]),
                                 # lafan1_dataset_conf=LAFAN1DatasetConf(["dance2_subject4", "walk1_subject1"]),
                                 n_substeps=15)
 

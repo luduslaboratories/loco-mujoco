@@ -89,25 +89,29 @@ class MJHumanoid(BaseRobotHumanoid):
                             ObservationType.JointPos("q_abdomen_y", xml_name="abdomen_y"),
                             ObservationType.JointPos("q_abdomen_x", xml_name="abdomen_x"),
                             # Left leg
-                            ObservationType.JointPos("q_left_hip_x", xml_name="left_hip_x"),
-                            ObservationType.JointPos("q_left_hip_z", xml_name="left_hip_z"),
-                            ObservationType.JointPos("q_left_hip_y", xml_name="left_hip_y"),
-                            ObservationType.JointPos("q_left_knee", xml_name="left_knee"),
+                            ObservationType.JointPos("q_left_hip_x", xml_name="hip_x_left"),
+                            ObservationType.JointPos("q_left_hip_z", xml_name="hip_z_left"),
+                            ObservationType.JointPos("q_left_hip_y", xml_name="hip_y_left"),
+                            ObservationType.JointPos("q_left_knee", xml_name="knee_left"),
+                            ObservationType.JointPos("q_left_ankle_y", xml_name="ankle_y_left"),
+                            ObservationType.JointPos("q_left_ankle_x", xml_name="ankle_x_left"),
                             # Right leg
-                            ObservationType.JointPos("q_right_hip_x", xml_name="right_hip_x"),
-                            ObservationType.JointPos("q_right_hip_z", xml_name="right_hip_z"),
-                            ObservationType.JointPos("q_right_hip_y", xml_name="right_hip_y"),
-                            ObservationType.JointPos("q_right_knee", xml_name="right_knee"),
+                            ObservationType.JointPos("q_right_hip_x", xml_name="hip_x_right"),
+                            ObservationType.JointPos("q_right_hip_z", xml_name="hip_z_right"),
+                            ObservationType.JointPos("q_right_hip_y", xml_name="hip_y_right"),
+                            ObservationType.JointPos("q_right_knee", xml_name="knee_right"),
+                            ObservationType.JointPos("q_right_ankle_y", xml_name="ankle_y_right"),
+                            ObservationType.JointPos("q_right_ankle_x", xml_name="ankle_x_right"),
                             # Left arm
-                            ObservationType.JointPos("q_left_shoulder1", xml_name="left_shoulder1"),
-                            ObservationType.JointPos("q_left_shoulder2", xml_name="left_shoulder2"),
-                            ObservationType.JointPos("q_left_elbow", xml_name="left_elbow"),
-                            # ObservationType.JointPos("q_left_hand", xml_name="left_hand"),
+                            ObservationType.JointPos("q_left_shoulder1", xml_name="shoulder1_left"),
+                            ObservationType.JointPos("q_left_shoulder2", xml_name="shoulder2_left"),
+                            ObservationType.JointPos("q_left_elbow1", xml_name="elbow1_left"),
+                            ObservationType.JointPos("q_left_elbow2", xml_name="elbow2_left"),
                             # Right arm
-                            ObservationType.JointPos("q_right_shoulder1", xml_name="right_shoulder1"),
-                            ObservationType.JointPos("q_right_shoulder2", xml_name="right_shoulder2"),
-                            ObservationType.JointPos("q_right_elbow", xml_name="right_elbow"),
-                            # ObservationType.JointPos("q_right_hand", xml_name="right_hand"),
+                            ObservationType.JointPos("q_right_shoulder1", xml_name="shoulder1_right"),
+                            ObservationType.JointPos("q_right_shoulder2", xml_name="shoulder2_right"),
+                            ObservationType.JointPos("q_right_elbow1", xml_name="elbow1_right"),
+                            ObservationType.JointPos("q_right_elbow2", xml_name="elbow2_right"),
 
                             # ------------- JOINT VEL -------------
                             ObservationType.FreeJointVel("dq_root", xml_name="root"),
@@ -116,25 +120,29 @@ class MJHumanoid(BaseRobotHumanoid):
                             ObservationType.JointVel("dq_abdomen_y", xml_name="abdomen_y"),
                             ObservationType.JointVel("dq_abdomen_x", xml_name="abdomen_x"),
                             # Left leg
-                            ObservationType.JointVel("dq_left_hip_x", xml_name="left_hip_x"),
-                            ObservationType.JointVel("dq_left_hip_z", xml_name="left_hip_z"),
-                            ObservationType.JointVel("dq_left_hip_y", xml_name="left_hip_y"),
-                            ObservationType.JointVel("dq_left_knee", xml_name="left_knee"),
+                            ObservationType.JointVel("dq_left_hip_x", xml_name="hip_x_left"),
+                            ObservationType.JointVel("dq_left_hip_z", xml_name="hip_z_left"),
+                            ObservationType.JointVel("dq_left_hip_y", xml_name="hip_y_left"),
+                            ObservationType.JointVel("dq_left_knee", xml_name="knee_left"),
+                            ObservationType.JointVel("dq_left_ankle_y", xml_name="ankle_y_left"),
+                            ObservationType.JointVel("dq_left_ankle_x", xml_name="ankle_x_left"),
                             # Right leg
-                            ObservationType.JointVel("dq_right_hip_x", xml_name="right_hip_x"),
-                            ObservationType.JointVel("dq_right_hip_z", xml_name="right_hip_z"),
-                            ObservationType.JointVel("dq_right_hip_y", xml_name="right_hip_y"),
-                            ObservationType.JointVel("dq_right_knee", xml_name="right_knee"),
+                            ObservationType.JointVel("dq_right_hip_x", xml_name="hip_x_right"),
+                            ObservationType.JointVel("dq_right_hip_z", xml_name="hip_z_right"),
+                            ObservationType.JointVel("dq_right_hip_y", xml_name="hip_y_right"),
+                            ObservationType.JointVel("dq_right_knee", xml_name="knee_right"),
+                            ObservationType.JointVel("dq_right_ankle_y", xml_name="ankle_y_right"),
+                            ObservationType.JointVel("dq_right_ankle_x", xml_name="ankle_x_right"),
                             # Left arm
-                            ObservationType.JointVel("dq_left_shoulder1", xml_name="left_shoulder1"),
-                            ObservationType.JointVel("dq_left_shoulder2", xml_name="left_shoulder2"),
-                            ObservationType.JointVel("dq_left_elbow", xml_name="left_elbow"),
-                            # ObservationType.JointVel("dq_left_hand", xml_name="left_hand"),
+                            ObservationType.JointVel("dq_left_shoulder1", xml_name="shoulder1_left"),
+                            ObservationType.JointVel("dq_left_shoulder2", xml_name="shoulder2_left"),
+                            ObservationType.JointVel("dq_left_elbow1", xml_name="elbow1_left"),
+                            ObservationType.JointVel("dq_left_elbow2", xml_name="elbow2_left"),
                             # Right arm
-                            ObservationType.JointVel("dq_right_shoulder1", xml_name="right_shoulder1"),
-                            ObservationType.JointVel("dq_right_shoulder2", xml_name="right_shoulder2"),
-                            ObservationType.JointVel("dq_right_elbow", xml_name="right_elbow"),
-                            # ObservationType.JointVel("dq_right_hand", xml_name="right_hand")
+                            ObservationType.JointVel("dq_right_shoulder1", xml_name="shoulder1_right"),
+                            ObservationType.JointVel("dq_right_shoulder2", xml_name="shoulder2_right"),
+                            ObservationType.JointVel("dq_right_elbow1", xml_name="elbow1_right"),
+                            ObservationType.JointVel("dq_right_elbow2", xml_name="elbow2_right")
                             ]
 
         return observation_spec
@@ -152,15 +160,15 @@ class MJHumanoid(BaseRobotHumanoid):
         """
         action_spec = [
             # Torso
-            "abdomen_y", "abdomen_z", "abdomen_x",
+            "abdomen_z", "abdomen_y", "abdomen_x",
             # Left leg
-            "left_hip_x", "left_hip_z", "left_hip_y", "left_knee",
+            "hip_x_left", "hip_z_left", "hip_y_left", "knee_left", "ankle_y_left", "ankle_x_left",
             # Right leg
-            "right_hip_x", "right_hip_z", "right_hip_y", "right_knee",
+            "hip_x_right", "hip_z_right", "hip_y_right", "knee_right", "ankle_y_right", "ankle_x_right",
             # Left arm
-            "left_shoulder1", "left_shoulder2", "left_elbow", 
+            "shoulder1_left", "shoulder2_left", "elbow1_left", "elbow2_left",
             # Right arm
-            "right_shoulder1", "right_shoulder2", "right_elbow",
+            "shoulder1_right", "shoulder2_right", "elbow1_right", "elbow2_right",
         ]
 
         return action_spec
@@ -191,4 +199,16 @@ class MJHumanoid(BaseRobotHumanoid):
         """
         Returns the healthy range of the root height. This is only used when HeightBasedTerminalStateHandler is used.
         """
-        return (0.6, 1.5)
+        return (0.4, 1.5)
+
+
+    # @info_property
+    # def sites_for_mimic(self) -> List[str]:
+    #     """
+    #     Returns the default sites that are used for mimic.
+    #     """
+    #     return ["upper_body_mimic", "head_mimic", "pelvis_mimic",
+    #             "left_shoulder_mimic", "left_elbow_mimic", "left_hand_mimic",
+    #             "left_hip_mimic", "left_knee_mimic", "left_foot_mimic",
+    #             "right_shoulder_mimic", "right_elbow_mimic", "right_hand_mimic",
+    #             "right_hip_mimic", "right_knee_mimic", "right_foot_mimic"]

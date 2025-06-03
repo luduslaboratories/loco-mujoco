@@ -1,0 +1,10 @@
+robot_pose_modifier:
+  - elbow1_right: "-np.pi/4"
+  - elbow1_left: "-np.pi/4"
+  - elbow2_right: "np.pi/1.5"
+  - elbow2_left: "np.pi/1.5"
+  - shoulder1_right: "-np.pi/6"
+  - shoulder1_left: "-np.pi/6"
+
+optimization_params:
+  z_offset_feet: -0.3
